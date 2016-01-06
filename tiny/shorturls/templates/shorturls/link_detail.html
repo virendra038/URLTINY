@@ -1,0 +1,7 @@
+  <!--<p> Short Link: /r/{{object.id}}
+  <p>    Original Link: {{object.url}} -->
+
+  {%url "redirect_short_url" short_url=object.pk as short_url %}
+
+  <p> Short Link: <a href="{{short_url}}"> {{short_url}}</a>
+   <p> Original Link: {{object.url}}
